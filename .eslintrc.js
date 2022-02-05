@@ -4,6 +4,7 @@ module.exports = {
     "es6": true,
     "jest/globals": true,
     "node": true,
+    "ubuntu": true
   },
   "extends": [
     "eslint:recommended",
