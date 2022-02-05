@@ -35,3 +35,4 @@ jobs:
           heroku_email: "Isaerwilliamvicsongocheco@gmail.com"
           healthcheck: "https://fsopokedexwil.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
