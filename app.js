@@ -12,7 +12,7 @@ app.get('/health', (_req, res) => {
 //sasdmassive changes
 
 app.get('/version', (_req, res) => {
-  res.send('5') // change this string to ensure a new version deployed
+  res.send('6') // change this string to ensure a new version deployed
 })
 
 app.listen(PORT, () => {
