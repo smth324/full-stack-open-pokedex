@@ -51,9 +51,10 @@ jobs:
         if: ${{ job.status == 'success'}}
         uses: rtCamp/action-slack-notify@v2
         env:
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       - name: notify slack when fail
         if: ${{ job.status == 'failure'}}
         uses: rtCamp/action-slack-notify@v2
         env:
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: 'Post Content failed'
