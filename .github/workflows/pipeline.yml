@@ -60,5 +60,5 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: "Job failed"
-          SLACK_MESSAGE: ${{github.workflow}}
+          SLACK_MESSAGE: ${{github.workflow}} join(github.event.commits.*.message, ' ')
           SLACK_COLOR: ${{ job.status }}

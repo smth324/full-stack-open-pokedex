@@ -2,7 +2,7 @@ name: periodic-health-check
 
 on: 
   schedule:
-    -cron: '50 * * * *'
+    - cron: '0,10 * * * *'
 
 jobs: 
   heatlhcheck:
