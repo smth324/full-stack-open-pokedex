@@ -60,4 +60,5 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: "Job failed"
+          SLACK_MESSAGE: ${{github.workflow}}
           SLACK_COLOR: ${{ job.status }}
