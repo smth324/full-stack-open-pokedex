@@ -9,7 +9,7 @@ app.use(express.static('dist'))
 app.get('/health', (_req, res) => {
   res.send('ok')
 })
-//s
+//sasd
 app.get('/version', (_req, res) => {
   res.send('4') // change this string to ensure a new version deployed
 })
